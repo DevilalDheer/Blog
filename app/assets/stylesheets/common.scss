@@ -1,0 +1,27 @@
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.logo {
+  background: image-url('logo.png');
+  height: 4em;
+  background-size: 11em 4em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.search_icon {
+  background: image-url('icons/search-black.png');
+  height: 2.15em;
+  background-size: 1.5em 1.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.blue_text {
+  color: #158DB7;
+}
+
+.slick-dots {
+  margin-left: auto;
+}

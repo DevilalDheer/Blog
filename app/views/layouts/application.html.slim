@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title MyBlog
+    = stylesheet_link_tag 'application', media: 'all', data: {turbolinks: {track: true}}
+    = javascript_include_tag 'application', data: {turbolinks: {track: true}}
+    = csrf_meta_tags
+    = yield :page_specific_assets
+  body
+    #wrapper.toggled
+      = render partial: 'layouts/side_menu'
+      = render partial: 'layouts/navbar'
+      #page-content-wrapper
+        .container-fluid
+          .row
+            .col-sm-10.col-sm-offset-1#content
+              = yield
+        = render partial: 'layouts/footer'
