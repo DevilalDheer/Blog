@@ -39,7 +39,6 @@ body {
     padding: 0;
     top: 3em;
     .container-fluid {
-      background: image-url('bg1.png');
       #content {
         background-color: white;
         box-shadow: 0em 1em 2em .5em #025B75;
@@ -48,17 +47,6 @@ body {
     }
   }
 
-  #sidebar-wrapper{
-    background: #170900;
-    margin-top: 3.4em;
-    .sidebar-brand {
-      background-color: #100700;
-      padding-right: 1em;
-    }
-    ul li {
-      box-shadow: 1em -1em 2em #754121;
-    }
-  }
   #footer {
     background-color: #2F1000;
     color: white;

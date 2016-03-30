@@ -2,6 +2,8 @@
   nav.navbar.navbar-default.navbar_position
     .container-fluid
       .navbar-header
-        .pull-left= link_to icon('list', 'Menu', id: 'my-icon', class: 'strong'), '#menu-toggle', id: 'menu-toggle'
         .pull-right
-          = icon('lock', 'Login', id: 'my-icon', class: 'strong')
+          - if user_signed_in?
+            = link_to 'Logout', destroy_user_session_path, method: :delete
+          - else
+            = link_to 'Login',  new_user_session_path

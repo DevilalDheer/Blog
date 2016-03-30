@@ -1,0 +1,17 @@
+.panel-body
+  = form_for @post do |f|
+    - if @post.errors.any?
+      #error_explanation
+        h2 = "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved:"
+        ul
+          - @post.errors.full_messages.each do |message|
+            li = message
+
+    .form-group
+      = f.hidden_field :user_id, value: current_user.id
+      = f.label :title
+      = f.text_field :title, class: 'form-control', placeholder: "Title"
+    .form-group
+      = f.label :content
+      = f.text_area :content, class: 'form-control'
+    = f.submit class: 'button btn btn-primary'
