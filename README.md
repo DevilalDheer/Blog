@@ -17,4 +17,4 @@ Feature:
 
 1. User can signup and signin
 2. User can create new post and edit existing post
-3. User can share post on socila sites.
+3. User can share post on social sites.
