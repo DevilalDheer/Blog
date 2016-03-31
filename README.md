@@ -2,9 +2,9 @@
 
 Requirments:
  
-ruby 2.2.1 
-gem 'pg' for heroku in production mode
-gem 'rails', '4.2.5'
+1. ruby 2.2.1 
+2. gem 'pg' for heroku in production mode
+3. gem 'rails', '4.2.5'
 
 
 Steps:
